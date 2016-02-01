@@ -27,7 +27,7 @@ apt-get install oracle-java8-installer oracle-java8-set-default -y
 #trim down Vagrant box
 #-> https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
 
-apt-get clean
+apt-get clean -y
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -f /EMPTY
 
