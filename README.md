@@ -7,7 +7,7 @@ Ubuntu 14.04 vagrant base box with current Docker + Java 8
 ```
 This will use the ubuntu/trusty64 base box, run the [bootstrap shell script](bootstrap/bootstrap.sh) and provision a current Docker engine, along with docker-compose and a recent Java 8 installation and finally do some tricks, to reduce the image size.
 
-A resulting vagrant-java-docker.box will be created; use this as you wish...
+A resulting **ubuntu-java-docker.box** will be created; use this as you wish...
 
 # Troubleshooting
 As the base box is 40G and the free space gets cleared by writing /dev/null to the disk, you need +40G free space and a fast disk, otherwise it might take some time... (i.e. an hour).
