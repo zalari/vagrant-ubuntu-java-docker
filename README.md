@@ -16,11 +16,14 @@ Sometimes the Oracle download site for Java is verrrrrrrrry slow, retry at a lat
 
 A lot of stuff is fetched from the internet (~1G on first run), so you should have a decent (i.e. fast) connection.
 
+Some magic is required to re-enable the VirtualBox Guest additions after Docker has been installed, an error message about failed mount is expected behaviour - do not worry!
+
 # Security
 Provisioning is done with the [bootstrap shell script](bootstrap/bootstrap.sh), have a look at it when in doubt. Your personal vagrant ssh key will be embedded into the base box, however a recent Vagrant fixes this issues upon first start.
 
 # TODO
 * make docker-compose version configurable
 * convert to packer.io goodness
+* optimize image size
 
 PRs are welcome!
